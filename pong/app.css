@@ -1,0 +1,120 @@
+html {
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: gray;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.menu h1 {
+  margin: 30px;
+  padding: 0;
+}
+.menu input {
+  display: none;
+  position: absolute;
+}
+.menu .menu__start_button {
+  margin-top: 30px;
+  background: white;
+  width: 225px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Rubik Mono One", sans-serif;
+  border: 1px solid lightskyblue;
+  border-radius: 8px;
+  outline: none;
+}
+.menu .menu__start_button:active {
+  background: lightskyblue;
+}
+.menu .menu__difficulty_bar label {
+  margin: 30px 5px 30px 5px;
+  background: white;
+  color: black;
+  padding: 8px;
+  border: 1px solid lightskyblue;
+  border-radius: 8px;
+}
+.menu .menu__difficulty_bar #r1:checked ~ #label1 {
+  background: lightskyblue;
+}
+.menu .menu__difficulty_bar #r2:checked ~ #label2 {
+  background: lightskyblue;
+}
+.menu .menu__difficulty_bar #r3:checked ~ #label3 {
+  background: lightskyblue;
+}
+
+.main_game {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: white;
+  position: relative;
+}
+.main_game p {
+  z-index: 100;
+  font-size: 120px;
+  margin: 0;
+  padding: 0;
+}
+.main_game span {
+  display: block;
+  position: absolute;
+  width: 50%;
+  transform: translateX(-2px);
+  height: 100%;
+  border-right: 5px dashed white;
+}
+.main_game #left_player, .main_game #right_player {
+  position: absolute;
+  height: 10%;
+  width: 1%;
+  background: white;
+}
+.main_game #left_player {
+  left: 2%;
+  top: 40%;
+}
+.main_game #right_player {
+  right: 2%;
+  top: 40%;
+}
+.main_game #ball {
+  height: 16px;
+  width: 16px;
+  background: white;
+  position: absolute;
+  left: calc(50% - 8px);
+  top: calc(50% - 8px);
+}
+
+/*# sourceMappingURL=app.css.map */

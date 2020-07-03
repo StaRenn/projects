@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <title>Pong</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="menu">
+        <h1>DIFFICULTY</h1>
+        <div class="menu__difficulty_bar">
+            <input type="radio" id="r1" name="difficulty">
+            <input type="radio" id="r2" name="difficulty" checked>
+            <input type="radio" id="r3" name="difficulty">
+            <label for="r1" id="label1">EASY</label>
+            <label for="r2" id="label2">MEDIUM</label>
+            <label for="r3" id="label3">HARD</label>
+        </div>
+        <button class="menu__start_button">START GAME</button>
+    </div>
+    <div class="main_game">
+        <span></span>
+        <p id="score">0 0</p>
+        <div id="left_player"></div>
+        <div id="right_player"></div>
+        <div id="ball"></div>
+    </div>
+</div>
+</body>
+</html>
