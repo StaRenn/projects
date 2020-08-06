@@ -1,0 +1,453 @@
+.main-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-page__welcome-block {
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page__welcome-block__text {
+  margin: 0 0 50px 0;
+  font-size: 4em;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.main-page__welcome-block__text a {
+  font-weight: 700;
+  color: #0366d6;
+  text-decoration: none;
+}
+.main-page__welcome-block__text a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .main-page__welcome-block {
+    max-width: 90vw;
+  }
+}
+.fade-enter {
+  position: absolute;
+  transition-timing-function: linear;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+.fade-enter-active {
+  position: absolute;
+  transition-timing-function: linear;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
+.fade-exit {
+  position: absolute;
+  opacity: 1;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+}
+
+.fade-exit-active {
+  position: absolute;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../src/static/ptesh_wallpaper_1_complete_by_theartofpoly-d7p0u90.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sign-in-h1 {
+  position: absolute;
+  top: 7.5%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.login-frame {
+  border-radius: 7.5%;
+  min-width: 400px;
+  min-height: 400px;
+  max-height: 750px;
+  position: relative;
+  background: white;
+  width: 40vh;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.1s;
+}
+
+@media screen and (max-width: 480px) {
+  .login-frame {
+    width: 90vw;
+    height: 300px;
+    min-height: auto;
+    min-width: auto;
+    max-height: none;
+    max-width: 300px;
+  }
+}
+.login-input, .password-input {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 5px 10px 5px 10px;
+  background: #f6f6f6;
+  border: 3px solid #f6f6f6;
+  border-radius: 0.75vw;
+  margin-bottom: 1vh;
+  width: 75%;
+  height: 4vh;
+  transition: 0.3s;
+}
+
+.login-input:focus, .password-input:focus {
+  border: 3px solid #f6f6f6;
+  border-bottom: 3px solid #0366d6;
+  background: white;
+}
+
+.sign-in-button {
+  background: #0366d6;
+  position: absolute;
+  bottom: 7.5%;
+  cursor: pointer;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: white;
+  width: 40%;
+  height: 15%;
+  border: 2px solid #0366d6;
+  transition: 0.3s;
+}
+
+.sign-in-button:hover {
+  background: white;
+  color: #0366d6;
+}
+
+.message-box {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1em;
+  height: 2vh;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.pending {
+  pointer-events: none;
+}
+
+.action-button {
+  outline: none;
+  cursor: pointer;
+  background: #0366d6;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  padding: 25px;
+  border: 2px solid #0366d6;
+  transition: 0.2s;
+}
+
+.action-button:hover {
+  background: white;
+  color: #0366d6;
+}
+
+.no-results {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+}
+.profile-page {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-page__frame {
+  max-width: 30vw;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-page__frame__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  width: 100%;
+  margin: 0;
+}
+
+.profile-page__frame__city, .profile-page__frame__languages {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.profile-page__frame__social-medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vw;
+}
+
+.profile-page__log-out.action-button {
+  padding: 12.5px;
+  font-size: 2rem;
+  margin-top: 10vh;
+  width: 100%;
+}
+
+.profile-page__frame__social-medias__button {
+  min-width: 25px;
+  min-height: 25px;
+  width: 2vw;
+  height: 2vw;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.15s;
+  margin-right: 12.5px;
+}
+
+.profile-page__frame__social-medias__button:hover {
+  transform: translateY(-0.25vh);
+}
+
+.twitch-icon {
+  background-image: url(../src/static/twitch.svg);
+}
+
+.vk-icon {
+  background-image: url(../src/static/vk.svg);
+}
+
+.youtube-icon {
+  background-image: url(../src/static/youtube.svg);
+}
+
+.telegram-icon {
+  background-image: url(../src/static/telegram.svg);
+}
+
+.web-icon {
+  background-image: url(../src/static/www.svg);
+}
+
+.twitter-icon {
+  background-image: url(../src/static/twitter.svg);
+}
+
+@media screen and (max-width: 480px) {
+  .profile-page__frame {
+    max-width: 90vw;
+  }
+}
+.navigation {
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.navigation * {
+  max-height: 40px;
+}
+
+.search-bar {
+  min-width: 500px;
+  width: 30vw;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #0366d6;
+}
+
+.search-bar__input {
+  width: 80%;
+  height: 4vh;
+  background: white;
+  font-size: 1.25rem;
+  padding: 0 1vw 0 1vw;
+  border: transparent;
+  font-weight: 400;
+  outline: none;
+}
+
+.search-bar__input:focus {
+  outline: none;
+}
+
+.search-bar__submit {
+  padding: 0;
+  width: 20%;
+  height: 4vh;
+  font-weight: 400;
+  background: #0366d6;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.navigation__profile__profile-info-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  width: 20%;
+  font-size: 1.25rem;
+  height: 4vh;
+  background: #0366d6;
+}
+
+@media screen and (max-width: 480px) {
+  .navigation__profile {
+    display: none;
+  }
+
+  .search-bar {
+    min-width: 0;
+    width: 100vw;
+    height: 7vh;
+  }
+
+  .search-bar * {
+    height: 7vh;
+  }
+}
+.news-page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-card {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  padding-bottom: 2vh;
+  border-bottom: 2px solid black;
+  font-family: "Roboto", sans-serif;
+}
+
+.news-card__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 0;
+  text-decoration: none;
+  color: #0366d6;
+  text-align: center;
+}
+
+.news-card__description {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.news-card__date {
+  font-size: 1rem;
+  font-weight: 300;
+  position: absolute;
+  right: 0;
+  bottom: -1vh;
+}
+
+.news-card__img {
+  width: 100%;
+  height: auto;
+  margin: 1vh 0 1vh 0;
+}
+.news-list {
+  width: 40vw;
+  min-height: 94vh;
+  max-width: 1000px;
+  margin-top: 6vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 480px;
+}
+
+@media screen and (max-width: 480px) {
+  .news-list {
+    min-width: auto;
+    width: 95vw;
+    min-height: 92vh;
+    margin-top: 8vh;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}

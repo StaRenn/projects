@@ -1,0 +1,49 @@
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../src/static/ptesh_wallpaper_1_complete_by_theartofpoly-d7p0u90.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sign-in-h1 {
+  position: absolute;
+  top: 7.5%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.login-frame {
+  border-radius: 7.5%;
+  min-width: 400px;
+  min-height: 400px;
+  max-height: 750px;
+  position: relative;
+  background: white;
+  width: 40vh;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.1s;
+}
+
+@media screen and (max-width: 480px) {
+  .login-frame {
+    width: 90vw;
+    height: 300px;
+    min-height: auto;
+    min-width: auto;
+    max-height: none;
+    max-width: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

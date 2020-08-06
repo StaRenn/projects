@@ -1,0 +1,93 @@
+.profile-page {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-page__frame {
+  max-width: 30vw;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-page__frame__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  width: 100%;
+  margin: 0;
+}
+
+.profile-page__frame__city, .profile-page__frame__languages {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.profile-page__frame__social-medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vw;
+}
+
+.profile-page__log-out.action-button {
+  padding: 12.5px;
+  font-size: 2rem;
+  margin-top: 10vh;
+  width: 100%;
+}
+
+.profile-page__frame__social-medias__button {
+  min-width: 25px;
+  min-height: 25px;
+  width: 2vw;
+  height: 2vw;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.15s;
+  margin-right: 12.5px;
+}
+
+.profile-page__frame__social-medias__button:hover {
+  transform: translateY(-0.25vh);
+}
+
+.twitch-icon {
+  background-image: url(../src/static/twitch.svg);
+}
+
+.vk-icon {
+  background-image: url(../src/static/vk.svg);
+}
+
+.youtube-icon {
+  background-image: url(../src/static/youtube.svg);
+}
+
+.telegram-icon {
+  background-image: url(../src/static/telegram.svg);
+}
+
+.web-icon {
+  background-image: url(../src/static/www.svg);
+}
+
+.twitter-icon {
+  background-image: url(../src/static/twitter.svg);
+}
+
+@media screen and (max-width: 480px) {
+  .profile-page__frame {
+    max-width: 90vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
