@@ -1,0 +1,71 @@
+nav {
+  z-index: 1000;
+  width: 100%;
+  margin-left: 0;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25vw;
+}
+
+.header__logo {
+  position: absolute;
+  left: 3.5vw;
+  height: 5vh;
+  width: 10vw;
+  background-image: url(../src/images/ang_font.png);
+  background-size: 100% 100%;
+}
+
+.header__navigation {
+  position: relative;
+  width: 30%;
+}
+
+.header__navigation__links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navigation__links__link {
+  text-decoration: none;
+  color: white;
+  transition: 0.25s;
+}
+
+.header__navigation__links__link.active {
+  pointer-events: none;
+  cursor: default;
+}
+
+.header__navigation__links__link:not(.active):hover {
+  text-shadow: 0 0 20px white, 0 0 10px white;
+}
+
+.header__navigation__spans {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -11;
+}
+.header__navigation__spans .hidden {
+  opacity: 0;
+}
+
+.header__navigation__spans__outline {
+  pointer-events: none;
+  box-shadow: 0 1px 7px #12ffff, 0 1px 14px #12ffff;
+  height: 0.35vh;
+  background: #12ffff;
+  color: rgba(0, 0, 0, 0);
+}
+
+/*# sourceMappingURL=header.css.map */

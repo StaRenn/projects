@@ -1,0 +1,126 @@
+.player {
+  z-index: 10000;
+  height: 100%;
+  width: 75%;
+  left: 1vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player audio {
+  display: none;
+}
+
+.player__play-button {
+  background-image: url(../src/images/play.png);
+  background-size: 100% 100%;
+  width: 5vh;
+  height: 5vh;
+  position: absolute;
+  left: 3vw;
+  cursor: pointer;
+}
+
+.player__play-button.inactive {
+  pointer-events: none;
+}
+
+.player__pause-button {
+  background-image: url(../src/images/pause.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+  width: 5vh;
+  height: 5vh;
+  position: absolute;
+  left: 3vw;
+}
+
+.player__time-line {
+  position: absolute;
+  display: flex;
+  left: 22vw;
+  justify-content: center;
+  align-items: center;
+}
+.player__time-line .player__time-line__input {
+  width: 10vw;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 0.5vw;
+}
+.player__time-line .player__time-line__input.inactive {
+  pointer-events: none;
+}
+.player__time-line .player__time-line__input::-webkit-slider-runnable-track {
+  background-color: #d7dbdd;
+  height: 0.666vh;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.player__time-line .player__time-line__input::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  border-radius: 100%;
+  background-color: #606670;
+  height: 2vh;
+  width: 2vh;
+  margin-top: -0.69vh;
+  cursor: pointer;
+}
+.player__time-line .player__current-time, .player__time-line .player__total-time {
+  margin: 0.75vw;
+  width: 2vw;
+  color: white;
+  font-size: 1.75vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.player__volume {
+  position: absolute;
+  left: 42.5vw;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player__volume span {
+  background-image: url(../src/images/sound.png);
+  background-size: 100% 100%;
+  width: 3vh;
+  height: 3vh;
+  margin-right: 1vw;
+}
+.player__volume .player__volume__input {
+  width: 4vw;
+  z-index: 12;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 0;
+}
+.player__volume .player__volume__input::-webkit-slider-runnable-track {
+  background-color: #d7dbdd;
+  height: 0.666vh;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.player__volume .player__volume__input::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  border-radius: 100%;
+  background-color: #606670;
+  height: 2vh;
+  width: 2vh;
+  margin-top: -0.69vh;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=player.css.map */

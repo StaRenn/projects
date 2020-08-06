@@ -1,0 +1,137 @@
+.home-page
+  width: 100%
+  height: 100%
+
+.home-page__sidebar
+  z-index: 1000
+  position: absolute
+  width: 100vh
+  right: -45vh
+  height: 10%
+  background: #2e2e2e
+  bottom: 45%
+  transform: rotate(-90deg)
+  display: flex
+  justify-content: center
+  align-items: center
+
+.home-page__sidebar__socials
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 55%
+
+.home-page__sidebar__socials__link
+  text-decoration: none
+  color: white
+  font-family: 'Roboto', sans-serif
+  font-size: 1.1vw
+  transition: 0.25s
+
+.home-page__sidebar__socials__link:hover
+  text-shadow: 0 0 20px white, 0 0 10px white
+
+.home-page__song-list-container
+  width: 100%
+  height: 100%
+  position: absolute
+  display: flex
+  align-items: center
+
+.home-page__song-list-container__song-list
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  width: 15vw
+  height: 15vw
+  left: 8vw
+  background: rgba(255,255,255,0.2)
+
+.home-page__song-list-container__song-list__change-song
+  position: absolute
+  left: -3vw
+  height: 15vw
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.home-page__song-list-container__song-list__change-song__prev,
+.home-page__song-list-container__song-list__change-song__next
+  cursor: pointer
+  width: 6vw
+  height: 2vw
+  z-index: 100
+  transition: 0.2s
+  p
+    font-size: 1vw
+    color: white
+    font-family: "Montserrat", sans-serif
+    margin: 0
+    padding: 0
+  span
+    margin: 0
+    position: absolute
+    width: 4vw
+    height: 1.5vh
+    background-image: url(../src/images/arrow_long.png)
+    background-size: 100% 100%
+    background-repeat: no-repeat
+
+.home-page__song-list-container__song-list__change-song__prev
+  span
+    transform: rotate(180deg)
+
+.home-page__song-list-container__song-list__change-song__next
+  margin-bottom: 3vh
+
+.home-page__song-list-container__song-list__change-song__prev:hover
+  margin-left: -0.8vw
+
+.home-page__song-list-container__song-list__change-song__next:hover
+  margin-left: 0.8vw
+
+.home-page__song-list-container__song-list__frame
+  width: 9vw
+  height: 9vw
+  transition: 0.25s
+  background-image: url(../src/images/pissin-razorbladez.jpg)
+  background-size: 100% 100%
+
+.home-page__player-block
+  position: absolute
+  bottom: 0
+  width: 70%
+  left: 0
+  height: 10%
+  background: #2C2C2C
+  display: flex
+  justify-content: left
+  align-items: center
+  .player
+    .player__time-line
+      left: 22vw
+
+.home-page__player-block__data
+  position: absolute
+  left: 8vw
+  width: auto
+
+.home-page__player-block__data__author, .home-page__player-block__data__songname
+  margin: 0.75vh
+  color: white
+  font-size: 1vw
+  font-family: 'Montserrat', sans-serif
+
+.home-page__player-block__data__songname
+  font-size: 0.8vw
+  opacity: 0.3
+
+.home-page__player-block__line
+  position: absolute
+  left: 20vw
+  height: 7vh
+  width: 2px
+  border-radius: 5px
+  background: white
+  opacity: 0.3

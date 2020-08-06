@@ -1,0 +1,111 @@
+.video-wrapper {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  color: #d7dbdd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-video {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 25%;
+  z-index: 99;
+  width: 15%;
+  height: 40%;
+  right: -10%;
+  background: rgba(10, 10, 10, 0.75);
+  font-family: "Share+Tech+Mono", sans-serif;
+  font-size: 1.5vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.close-video__button {
+  margin-left: 15%;
+}
+
+.close-video:hover {
+  text-shadow: 0 0 20px white, 0 0 10px white;
+  background: rgba(15, 15, 15, 0.75);
+}
+
+.youtube-video-container {
+  bottom: 0;
+  width: 100%;
+  height: 90%;
+  position: absolute;
+}
+
+.video-left-col, .video-right-col {
+  z-index: 100;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  transition: 0.75s ease;
+}
+
+.video-container {
+  overflow: hidden;
+  cursor: pointer;
+  float: left;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container__title {
+  text-shadow: 0 0 40px white, 0 0 20px white;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  z-index: 100;
+  margin: 0;
+}
+
+.video-container:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.video-container:hover:after {
+  opacity: 0.6;
+}
+
+.video-left-col {
+  left: 0;
+  top: 0;
+}
+.video-left-col .video-container:first-child {
+  background-image: url("../src/images/defqon2018.jpg");
+}
+.video-left-col .video-container:last-child {
+  background-image: url("../src/images/moh2019.jpg");
+}
+
+.video-right-col {
+  right: 0;
+  top: 0;
+}
+.video-right-col .video-container:first-child {
+  background-image: url("../src/images/qlimax2016.jpg");
+}
+.video-right-col .video-container:last-child {
+  background-image: url("../src/images/tomorrowland2017.jpg");
+}
+
+/*# sourceMappingURL=videoPage.css.map */

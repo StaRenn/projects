@@ -1,0 +1,149 @@
+.music-page__player-wrapper {
+  width: 50%;
+  height: 17.5%;
+  left: 35%;
+  top: 82.5vh;
+  position: absolute;
+}
+.music-page__player-wrapper .player .player__play-button, .music-page__player-wrapper .player .player__pause-button {
+  left: 0;
+}
+.music-page__player-wrapper .player .player__time-line {
+  left: 5vw;
+}
+.music-page__player-wrapper .player .player__volume {
+  left: 25vw;
+}
+
+.music-page__slider__wrapper {
+  overflow: hidden;
+  z-index: 1000;
+  width: 100vw;
+  height: 90vh;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.music-page__slider__wrapper__slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  transition: 0.25s cubic-bezier(0, 0, 0.39, 1);
+  height: 15vw;
+}
+
+.music-page__slider__slide {
+  z-index: 100;
+  margin: 2.5vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 15vw;
+  height: 100%;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.music-page__slider__slide__logo {
+  position: absolute;
+  transition: 0.3s;
+  width: 60%;
+  height: 60%;
+  z-index: 12;
+}
+
+.music-page__slider__slide__date {
+  z-index: 11;
+  margin: 0;
+  width: 100%;
+  height: 20%;
+  top: 80%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25vw;
+}
+
+.music-page__slider__slide:not(.active):hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.music-page__slider__slide:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 13;
+  background: transparent;
+}
+
+.music-page__slider__slide.active {
+  transform: scale(1.25);
+  pointer-events: none;
+}
+.music-page__slider__slide.active .music-page__slider__slide__logo {
+  width: 100%;
+  height: 100%;
+}
+
+.music-page__background {
+  transition: 0.3s;
+  opacity: 0.05;
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.music-page__track-list {
+  z-index: 100000;
+  bottom: 5vh;
+  height: 20vh;
+  width: 33.3%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 15%;
+}
+.music-page__track-list #music-page__track-list__first-column,
+.music-page__track-list #music-page__track-list__second-column {
+  width: 12.5vw;
+}
+
+.music-page__track-list__track {
+  margin: 0;
+  z-index: 1001;
+  font-family: "Share+Tech+Mono", sans-serif;
+  font-size: 1vw;
+  list-style-type: none;
+  color: white;
+  padding: 0.5vw;
+  cursor: pointer;
+  transition: 0.05s;
+}
+
+.music-page__track-list__track.active {
+  color: #12ffff;
+  text-shadow: 0 0 10px #12ffff, 0 0 5px #12ffff;
+}
+
+.music-page__track-list__track:not(.active):not(.paused):hover {
+  text-shadow: 0 0 10px white, 0 0 5px white, 0 0 1px white;
+}
+
+/*# sourceMappingURL=musicPage.css.map */

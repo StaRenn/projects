@@ -1,0 +1,85 @@
+.page-tourdates
+  width: 100%
+  height: 100%
+
+.page-tourdates__slider-wrapper
+  overflow: hidden
+  width: 100vw
+  height: 90vh
+  margin-top: 10vh
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+
+.page-tourdates__slider-wrapper__slider
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 275vw
+  transition: 0.25s cubic-bezier(0,0,.39,1)
+  height: 15vw
+
+.page-tourdates__slider-wrapper__slider__slide
+  margin: 2.5vw
+  position: relative
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  color: white
+  width: 20vw
+  height: 100%
+  background: transparent
+  transition: 0.3s
+
+.page-tourdates__slider-wrapper__slider__slide__date
+  position: absolute
+  margin: 0
+  top: 2.5vh
+  font-size: 1.25vw
+  letter-spacing: 0.2vw
+  font-family: "Montserrat", sans-serif
+
+.page-tourdates__slider-wrapper__slider__slide__name
+  margin: 0
+  font-size: 2.25vw
+  text-align: center
+  font-family: "Roboto", sans-serif
+  font-weight: 700
+  text-shadow: 0 0 30px white
+
+.page-tourdates__slider-wrapper__slider__slide__location
+  position: absolute
+  bottom: 2.5vh
+  font-size: 1.25vw
+  margin: 0
+  font-family: "Roboto", sans-serif
+  font-weight: 400
+
+.page-tourdates__slider-wrapper__slider__slide:after
+  content: "TO BUY TICKET"
+  font-size: 1.25vw
+  letter-spacing: 0.1vw
+  font-family: "Montserrat", sans-serif
+  color: transparent
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: 0.3s
+  width: 20vw
+  height: 100%
+  position: absolute
+  background: transparent
+  border: 4px solid #2e2e2e
+
+.page-tourdates__slider-wrapper__slider__slide:hover
+  color: transparent
+
+.page-tourdates__slider-wrapper__slider__slide:hover:after
+  cursor: pointer
+  color: white
+  text-shadow: 0 0 20px white
+  transform: scale(1.15)
+  background: #2e2e2e
