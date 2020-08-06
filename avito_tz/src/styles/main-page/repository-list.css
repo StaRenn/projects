@@ -1,0 +1,37 @@
+.main-page__repository-list {
+  width: 35%;
+  min-width: 500px;
+}
+
+.main-page__repository-list__repositories-amount {
+  margin: 0;
+  padding: 2vh 0 2vh 0;
+  text-align: center;
+  border-bottom: 2px solid gray;
+}
+
+.main-page__repository-list__card {
+  width: 100%;
+  height: auto;
+  min-height: 15vh;
+  border-bottom: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1vw;
+}
+.main-page__repository-list__card .repository__title:hover {
+  text-decoration: underline;
+}
+.main-page__repository-list__card .repository__additional-info__repo-stats {
+  padding: 0;
+}
+
+.main-page__repository-list__card__repository-link {
+  font-size: 2vh;
+  font-weight: 300;
+  color: #0366d6;
+}
+
+/*# sourceMappingURL=repository-list.css.map */

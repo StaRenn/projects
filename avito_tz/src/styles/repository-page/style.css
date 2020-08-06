@@ -1,0 +1,111 @@
+.repository-page {
+  width: 100%;
+  min-height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repository-page__card {
+  min-width: 500px;
+  width: auto;
+  min-height: 400px;
+  text-align: center;
+}
+.repository-page__card .repository__additional-info__repo-stats {
+  justify-content: center;
+}
+.repository-page__card .repository__title {
+  margin: 0 0 2.5vh 0;
+}
+.repository-page__card .repository__additional-info__repo-stats .repository__additional-info__last-commit-date, .repository-page__card .repository__additional-info__repo-stats .repository__additional-info__stars-amount {
+  margin-top: 0;
+}
+
+.repository__main-info__profile {
+  min-width: 200px;
+  width: 12.5vw;
+  min-height: 15vw;
+  height: auto;
+  text-align: center;
+}
+
+.repository__main-info__profile__picture {
+  min-width: 200px;
+  min-height: 200px;
+  width: 12.5vw;
+  height: 12.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.repository__main-info__profile__owner {
+  font-size: 1.75vw;
+  text-decoration: none;
+  font-weight: 400;
+  color: #0366d6;
+}
+
+.repository__main-info__profile__owner:hover {
+  text-decoration: underline;
+}
+
+.repository__main-info__info-block__languages {
+  max-width: 35vw;
+  text-align: left;
+  margin-left: 1vw;
+  padding: 0 0 1vw 0;
+  border-bottom: 1px solid black;
+}
+
+.repository__main-info__info-block__languages__language {
+  font-size: 1.3vw;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0.5vw 1vw 0 0;
+}
+
+.repository__main-info__info-block__description {
+  text-align: left;
+  max-width: 35vw;
+  font-size: 1.2vw;
+  font-weight: 400;
+  margin: 1vw 0 0 1vw;
+  padding-bottom: 1vw;
+  border-bottom: 1px solid black;
+}
+
+.repository__main-info__info-block__contributors {
+  max-width: 35vw;
+  font-size: 1.2vw;
+  font-weight: 700;
+  margin: 1vw 0 0 1vw;
+}
+
+.repository__main-info__info-block__contributors__total, .repository__main-info__info-block__contributors__no-contributors {
+  width: 100%;
+  font-size: 1.2vw;
+  margin: 1vw 0 0.5vw 0;
+}
+
+.repository__main-info__info-block__contributors__total {
+  text-align: center;
+}
+
+.repository__main-info__info-block__contributors__no-contributors {
+  text-align: left;
+  margin-left: 1vw;
+}
+
+.repository__main-info__info-block__contributors__contributor-login {
+  text-decoration: none;
+  font-size: 1.1vw;
+  margin: 0.5vw 1vw 0 0;
+  color: #0366d6;
+  display: inline-block;
+}
+
+.repository__main-info__info-block__contributors__contributor-login:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+.main-page__pagination__next-button, .main-page__pagination__prev-button {
+  margin-top: 20%;
+  width: auto;
+  height: 60%;
+}
+
+.main-page__pagination__prev-button {
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=pagination.css.map */

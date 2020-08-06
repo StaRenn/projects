@@ -1,0 +1,585 @@
+.rc-pagination {
+  font-size: 12px;
+  font-family: 'Arial';
+  user-select: none;
+  padding: 0;
+}
+.rc-pagination > li {
+  list-style: none;
+}
+.rc-pagination-total-text {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+.rc-pagination:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.rc-pagination-item {
+  cursor: pointer;
+  border-radius: 6px;
+  min-width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  list-style: none;
+  float: left;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  margin-right: 8px;
+}
+.rc-pagination-item a {
+  text-decoration: none;
+  color: #666;
+}
+.rc-pagination-item:hover {
+  border-color: #2db7f5;
+}
+.rc-pagination-item:hover a {
+  color: #2db7f5;
+}
+.rc-pagination-item-disabled {
+  cursor: not-allowed;
+}
+.rc-pagination-item-disabled:hover {
+  border-color: #d9d9d9;
+}
+.rc-pagination-item-disabled:hover a {
+  color: #d9d9d9;
+}
+.rc-pagination-item-active {
+  background-color: #2db7f5;
+  border-color: #2db7f5;
+}
+.rc-pagination-item-active a {
+  color: #fff;
+}
+.rc-pagination-item-active:hover a {
+  color: #fff;
+}
+.rc-pagination-jump-prev:after,
+.rc-pagination-jump-next:after {
+  content: '•••';
+  display: block;
+  letter-spacing: 2px;
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 1px;
+}
+.rc-pagination-jump-prev:hover:after,
+.rc-pagination-jump-next:hover:after {
+  color: #2db7f5;
+}
+.rc-pagination-jump-prev:hover:after {
+  content: '«';
+}
+.rc-pagination-jump-next:hover:after {
+  content: '»';
+}
+.rc-pagination-jump-prev-custom-icon,
+.rc-pagination-jump-next-custom-icon {
+  position: relative;
+}
+.rc-pagination-jump-prev-custom-icon:after,
+.rc-pagination-jump-next-custom-icon:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transition: all 0.2s;
+  content: '•••';
+  opacity: 1;
+  display: block;
+  letter-spacing: 2px;
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 1px;
+}
+.rc-pagination-jump-prev-custom-icon .custom-icon-jump-prev,
+.rc-pagination-jump-next-custom-icon .custom-icon-jump-prev,
+.rc-pagination-jump-prev-custom-icon .custom-icon-jump-next,
+.rc-pagination-jump-next-custom-icon .custom-icon-jump-next {
+  opacity: 0;
+  transition: all 0.2s;
+}
+.rc-pagination-jump-prev-custom-icon:hover:after,
+.rc-pagination-jump-next-custom-icon:hover:after {
+  opacity: 0;
+  color: #ccc;
+}
+.rc-pagination-jump-prev-custom-icon:hover .custom-icon-jump-prev,
+.rc-pagination-jump-next-custom-icon:hover .custom-icon-jump-prev,
+.rc-pagination-jump-prev-custom-icon:hover .custom-icon-jump-next,
+.rc-pagination-jump-next-custom-icon:hover .custom-icon-jump-next {
+  opacity: 1;
+  color: #2db7f5;
+}
+.rc-pagination-prev,
+.rc-pagination-jump-prev,
+.rc-pagination-jump-next {
+  margin-right: 8px;
+}
+.rc-pagination-prev,
+.rc-pagination-next,
+.rc-pagination-jump-prev,
+.rc-pagination-jump-next {
+  cursor: pointer;
+  color: #666;
+  font-size: 10px;
+  border-radius: 6px;
+  list-style: none;
+  min-width: 28px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+  text-align: center;
+}
+.rc-pagination-prev a:after {
+  content: '‹';
+  display: block;
+}
+.rc-pagination-next a:after {
+  content: '›';
+  display: block;
+}
+.rc-pagination-prev,
+.rc-pagination-next {
+  border: 1px solid #d9d9d9;
+  font-size: 18px;
+}
+.rc-pagination-prev a,
+.rc-pagination-next a {
+  color: #666;
+}
+.rc-pagination-prev a:after,
+.rc-pagination-next a:after {
+  margin-top: -1px;
+}
+.rc-pagination-disabled {
+  cursor: not-allowed;
+}
+.rc-pagination-disabled a {
+  color: #ccc;
+}
+.rc-pagination-disabled .rc-pagination-item,
+.rc-pagination-disabled .rc-pagination-prev,
+.rc-pagination-disabled .rc-pagination-next {
+  cursor: not-allowed;
+}
+.rc-pagination-disabled .rc-pagination-item:hover,
+.rc-pagination-disabled .rc-pagination-prev:hover,
+.rc-pagination-disabled .rc-pagination-next:hover {
+  border-color: #d9d9d9;
+}
+.rc-pagination-disabled .rc-pagination-item:hover a,
+.rc-pagination-disabled .rc-pagination-prev:hover a,
+.rc-pagination-disabled .rc-pagination-next:hover a {
+  color: #d9d9d9;
+}
+.rc-pagination-disabled .rc-pagination-jump-prev,
+.rc-pagination-disabled .rc-pagination-jump-next {
+  pointer-events: none;
+}
+.rc-pagination-options {
+  float: left;
+  margin-left: 15px;
+}
+.rc-pagination-options-size-changer {
+  float: left;
+  width: 80px;
+}
+.rc-pagination-options-quick-jumper {
+  float: left;
+  margin-left: 16px;
+  height: 28px;
+  line-height: 28px;
+}
+.rc-pagination-options-quick-jumper input {
+  margin: 0 8px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  padding: 3px 12px;
+  width: 50px;
+  height: 28px;
+}
+.rc-pagination-options-quick-jumper input:hover {
+  border-color: #2db7f5;
+}
+.rc-pagination-options-quick-jumper button {
+  display: inline-block;
+  margin: 0 8px;
+  font-weight: 500;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 0 15px;
+  font-size: 12px;
+  border-radius: 6px;
+  height: 28px;
+  user-select: none;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: relative;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border-color: #d9d9d9;
+}
+.rc-pagination-options-quick-jumper button:hover,
+.rc-pagination-options-quick-jumper button:active,
+.rc-pagination-options-quick-jumper button:focus {
+  color: #2db7f5;
+  background-color: #fff;
+  border-color: #2db7f5;
+}
+.rc-pagination-simple .rc-pagination-prev,
+.rc-pagination-simple .rc-pagination-next {
+  border: none;
+  height: 24px;
+  line-height: 24px;
+  margin: 0;
+  font-size: 18px;
+}
+.rc-pagination-simple .rc-pagination-simple-pager {
+  float: left;
+  margin-right: 8px;
+  list-style: none;
+}
+.rc-pagination-simple .rc-pagination-simple-pager .rc-pagination-slash {
+  margin: 0 10px;
+}
+.rc-pagination-simple .rc-pagination-simple-pager input {
+  margin: 0 8px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  padding: 5px 8px;
+  min-height: 20px;
+}
+.rc-pagination-simple .rc-pagination-simple-pager input:hover {
+  border-color: #2db7f5;
+}
+.rc-pagination-simple .rc-pagination-simple-pager button {
+  display: inline-block;
+  margin: 0 8px;
+  font-weight: 500;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 0 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  height: 26px;
+  user-select: none;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: relative;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border-color: #d9d9d9;
+}
+.rc-pagination-simple .rc-pagination-simple-pager button:hover,
+.rc-pagination-simple .rc-pagination-simple-pager button:active,
+.rc-pagination-simple .rc-pagination-simple-pager button:focus {
+  color: #2db7f5;
+  background-color: #fff;
+  border-color: #2db7f5;
+}
+@media only screen and (max-width: 1024px) {
+  .rc-pagination-item-after-jump-prev,
+  .rc-pagination-item-before-jump-next {
+    display: none;
+  }
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #24292E;
+  width: 100%;
+  height: 6vh;
+}
+
+.search-form {
+  min-width: 500px;
+  height: 4vh;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form__input {
+  min-width: 500px;
+  width: 25vw;
+  height: 4vh;
+  border: none;
+  outline: none;
+  font-size: 2.5vh;
+  padding: 1vh;
+  border-radius: 0.5vw 0 0 0.5vw;
+  background-color: #43484C;
+  color: white;
+}
+
+.search-form__input::placeholder {
+  color: white;
+}
+
+.search-form__submit {
+  min-width: 50px;
+  height: 4vh;
+  width: 4vh;
+  background-image: url("/src/svg/search.svg");
+  background-size: 80% 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #43484C;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0 0.5vw 0.5vw 0;
+}
+.main-page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-page.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.main-page__repository-list {
+  width: 35%;
+  min-width: 500px;
+}
+
+.main-page__repository-list__repositories-amount {
+  margin: 0;
+  padding: 2vh 0 2vh 0;
+  text-align: center;
+  border-bottom: 2px solid gray;
+}
+
+.main-page__repository-list__card {
+  width: 100%;
+  height: auto;
+  min-height: 15vh;
+  border-bottom: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1vw;
+}
+.main-page__repository-list__card .repository__title:hover {
+  text-decoration: underline;
+}
+.main-page__repository-list__card .repository__additional-info__repo-stats {
+  padding: 0;
+}
+
+.main-page__repository-list__card__repository-link {
+  font-size: 2vh;
+  font-weight: 300;
+  color: #0366d6;
+}
+.main-page__pagination__next-button, .main-page__pagination__prev-button {
+  margin-top: 20%;
+  width: auto;
+  height: 60%;
+}
+
+.main-page__pagination__prev-button {
+  transform: rotate(180deg);
+}
+.repository-page {
+  width: 100%;
+  min-height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repository-page__card {
+  min-width: 500px;
+  width: auto;
+  min-height: 400px;
+  text-align: center;
+}
+.repository-page__card .repository__additional-info__repo-stats {
+  justify-content: center;
+}
+.repository-page__card .repository__title {
+  margin: 0 0 2.5vh 0;
+}
+.repository-page__card .repository__additional-info__repo-stats .repository__additional-info__last-commit-date, .repository-page__card .repository__additional-info__repo-stats .repository__additional-info__stars-amount {
+  margin-top: 0;
+}
+
+.repository__main-info__profile {
+  min-width: 200px;
+  width: 12.5vw;
+  min-height: 15vw;
+  height: auto;
+  text-align: center;
+}
+
+.repository__main-info__profile__picture {
+  min-width: 200px;
+  min-height: 200px;
+  width: 12.5vw;
+  height: 12.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.repository__main-info__profile__owner {
+  font-size: 1.75vw;
+  text-decoration: none;
+  font-weight: 400;
+  color: #0366d6;
+}
+
+.repository__main-info__profile__owner:hover {
+  text-decoration: underline;
+}
+
+.repository__main-info__info-block__languages {
+  max-width: 35vw;
+  text-align: left;
+  margin-left: 1vw;
+  padding: 0 0 1vw 0;
+  border-bottom: 1px solid black;
+}
+
+.repository__main-info__info-block__languages__language {
+  font-size: 1.3vw;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0.5vw 1vw 0 0;
+}
+
+.repository__main-info__info-block__description {
+  text-align: left;
+  max-width: 35vw;
+  font-size: 1.2vw;
+  font-weight: 400;
+  margin: 1vw 0 0 1vw;
+  padding-bottom: 1vw;
+  border-bottom: 1px solid black;
+}
+
+.repository__main-info__info-block__contributors {
+  max-width: 35vw;
+  font-size: 1.2vw;
+  font-weight: 700;
+  margin: 1vw 0 0 1vw;
+}
+
+.repository__main-info__info-block__contributors__total, .repository__main-info__info-block__contributors__no-contributors {
+  width: 100%;
+  font-size: 1.2vw;
+  margin: 1vw 0 0.5vw 0;
+}
+
+.repository__main-info__info-block__contributors__total {
+  text-align: center;
+}
+
+.repository__main-info__info-block__contributors__no-contributors {
+  text-align: left;
+  margin-left: 1vw;
+}
+
+.repository__main-info__info-block__contributors__contributor-login {
+  text-decoration: none;
+  font-size: 1.1vw;
+  margin: 0.5vw 1vw 0 0;
+  color: #0366d6;
+  display: inline-block;
+}
+
+.repository__main-info__info-block__contributors__contributor-login:hover {
+  text-decoration: underline;
+}
+.loading-screen {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 94vh;
+}
+
+.rate-limit-exceeded {
+  width: 100%;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repository__additional-info__stars-amount {
+  margin: 1vw 0 1vw 0;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+.repository__additional-info__stars-amount__span {
+  background-image: url("/src/svg/star.svg");
+  margin-right: 0.5vw;
+  width: 1.75vh;
+  height: 1.75vh;
+  display: inline-block;
+}
+
+.repository__additional-info__repo-stats {
+  display: flex;
+}
+
+.repository__additional-info__last-commit-date {
+  margin: 1vw 0 1vw 2vw;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+.repository__main-info {
+  display: flex;
+  justify-content: left;
+  height: auto;
+}
+
+.repository__title {
+  font-size: 2vw;
+  text-decoration: none;
+  font-weight: 700;
+  color: #0366d6;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
