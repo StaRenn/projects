@@ -1,0 +1,25 @@
+.services-and-blog-container
+  width: 100vw
+  height: auto
+  display: flex
+  align-items: center
+  overflow: hidden
+  flex-direction: column
+  position: relative
+  background: #1d1d1d
+
+.services-and-blog-container:before, .services-and-blog-container:after
+  content: ""
+  position: absolute
+  width: 0
+  height: 0
+  border-style: solid
+
+.services-and-blog-container:before
+  bottom: 0
+  border-width: 0 0 10vh 100vw
+  border-color: transparent transparent white transparent
+
+.services-and-blog-container:after
+  border-width: 10vh 100vw 0 0
+  border-color: white transparent transparent transparent

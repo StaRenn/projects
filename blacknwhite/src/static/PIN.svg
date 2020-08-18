@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="21" viewBox="0 0 16 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="952" y="4886" width="16" height="21" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#323232"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="PIN_2" data-name="PIN 2" class="cls-1" d="M960,4907s-8-8.78-8-13.13a8,8,0,0,1,16,0C968,4898.22,960,4907,960,4907Zm0-18.38a5.251,5.251,0,1,0,5.333,5.25A5.3,5.3,0,0,0,960,4888.62Zm0,7.88a2.625,2.625,0,1,1,2.667-2.63A2.65,2.65,0,0,1,960,4896.5Z" transform="translate(-952 -4886)"/>
+</svg>

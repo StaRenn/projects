@@ -1,0 +1,25 @@
+.team
+  width: 100vw
+  height: auto
+  display: flex
+  align-items: center
+  flex-direction: column
+  .info-blocks-section
+    .info-block-with-picture:nth-child(1)
+      .info-block-with-picture__picture
+        background-image: url(../src/static/MarkOnce.png)
+    .info-block-with-picture:nth-child(2)
+      position: relative
+      bottom: 7.5vh
+      .info-block-with-picture__picture
+        background-image: url(../src/static/JustinTwice.png)
+    .info-block-with-picture:nth-child(3)
+      .info-block-with-picture__picture
+        background-image: url(../src/static/AntonioNEver.png)
+
+@media screen and (max-width: 480px)
+  .team
+    .info-blocks-section
+      .info-block-with-picture:nth-child(2)
+        bottom: 0
+

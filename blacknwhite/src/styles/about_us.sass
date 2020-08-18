@@ -1,0 +1,108 @@
+.about-us
+  background: #1d1d1d
+  height: auto
+  min-height: 100vh
+  width: 100vw
+  flex-direction: column
+  display: flex
+  position: relative
+
+.about-us:before
+  content: ""
+  width: 4px
+  height: 95%
+  background: white
+  left: calc(50% - 4px)
+  top: 0
+  position: absolute
+
+.about-us__timeline
+  overflow: hidden
+  display: flex
+  align-items: center
+  flex-direction: column
+  width: 100vw
+  height: auto
+  min-height: 80vh
+  position: relative
+  justify-content: space-around
+  padding-top: 15vh
+
+.about-us__timeline__item
+  display: flex
+  justify-content: flex-end
+  position: relative
+  height: auto
+  width: calc(45vw + 20px)
+  transform: translateX(-50%)
+
+.about-us__timeline__item__icon
+  border: 3px solid white
+  background: #1d1d1d
+  right: -11px
+  width: 20px
+  height: 20px
+  position: absolute
+  border-radius: 50%
+
+.about-us__timeline__item__content
+  right: 50px
+  position: relative
+  width: calc(35vw - 50px)
+
+.about-us__timeline__item__content__year
+  text-align: right
+  margin: 0
+  color: white
+  font-family: "Roboto", sans-serif
+  font-weight: 700
+  font-size: 3rem
+
+.about-us__timeline__item__content__text
+  font-family: "Montserrat", sans-serif
+  color: #b7b7b7
+  font-weight: 400
+  font-size: 1rem
+
+.about-us__timeline__item:nth-child(even)
+  transform: translateX(50%)
+  justify-content: flex-start
+  .about-us__timeline__item__icon
+    left: -15px
+  .about-us__timeline__item__content
+    left: 50px
+  .about-us__timeline__item__content__year
+    text-align: left
+
+.about-us__buildings
+  overflow: hidden
+  position: relative
+  width: 100vw
+  height: 15vh
+  bottom: -2px
+
+.about-us__buildings__layer-1, .about-us__buildings__layer-2
+  overflow: hidden
+  width: 100vw
+  height: 15vh
+  position: absolute
+  background-size: 200vh 100%
+  background-repeat: repeat-x
+  background-position: center
+
+
+.about-us__buildings__layer-1
+  z-index: 10000
+  background-image: url(../src/static/Buildings__White.png)
+
+.about-us__buildings__layer-2
+  bottom: 2.5vh
+  background-image: url(../src/static/Buildings__Black.png)
+
+@media screen and (max-width: 480px)
+  .about-us__timeline__item__content
+    width: 40vw
+    right: 20px
+  .about-us__timeline__item:nth-child(even)
+    .about-us__timeline__item__content
+      left: 20px

@@ -1,0 +1,55 @@
+.header {
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__link {
+  text-decoration: none;
+  margin: 0 1vw 0 1vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #989696;
+  transition: 0.1s;
+}
+
+.header__link.active {
+  color: #282828;
+  pointer-events: none;
+}
+
+.header__link:not(.active):hover {
+  color: #636363;
+  transform: scale(1.05);
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  margin: 0 2vw 0 2vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    height: 30px;
+  }
+
+  .header__logo {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

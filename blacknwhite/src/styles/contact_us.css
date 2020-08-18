@@ -1,0 +1,18 @@
+.contact-us {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-us .info-blocks-section .info-block-with-picture:nth-child(1) .info-block-with-picture__picture {
+  background-image: url(..src/static/phone.svg);
+}
+.contact-us .info-blocks-section .info-block-with-picture:nth-child(1) .info-block-with-picture__picture {
+  background-image: url(..src/static/pin.svg);
+}
+.contact-us .info-blocks-section .info-block-with-picture:nth-child(1) .info-block-with-picture__picture {
+  background-image: url(..src/static/email.svg);
+}
+
+/*# sourceMappingURL=contact_us.css.map */

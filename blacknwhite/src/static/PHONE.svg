@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="21" viewBox="0 0 14 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="733" y="4886" width="14" height="21" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#323232"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Phone_Auricular._Attribute_as_Freepik_from_Flaticon.com" data-name="Phone Auricular. Attribute as Freepik from Flaticon.com" class="cls-1" d="M738.6,4886.97l0.993,2.07a1.672,1.672,0,0,1-.532,2.07l-1.159.77a0.582,0.582,0,0,0-.2.71l2.012,4.2,2.082,4.34a0.554,0.554,0,0,0,.288.27,8.138,8.138,0,0,0,1.883-.07l0.234-.02a2.177,2.177,0,0,1,2.039,1.22l0.638,1.54a1.7,1.7,0,0,1-.7,2.1c-5.286,2.77-7.3-2.28-7.3-2.28l-2.649-5.53-2.579-5.39s-2.68-4.75,2.91-6.88A1.7,1.7,0,0,1,738.6,4886.97Z" transform="translate(-733 -4886)"/>
+</svg>
