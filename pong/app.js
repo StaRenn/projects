@@ -24,7 +24,7 @@ window.onload = function() {
     left_player.style.top = left_player_pos + "%";
     right_player.style.top = right_player_pos + "%";
     
-        function doesBallCollidesWithPlayer(player, player_position){
+    function doesBallCollidesWithPlayer(player, player_position){
         if (Math.round(ball_pos_x) === player_position && (ball_pos_y + ball_height >= player && ball_pos_y <= player + 10)) { //colliding left bar
             ball_speed_x = -ball_speed_x; //changing ball's x direction
             ball_speed_y = ball_speed_y < 0 ? -Math.random()/3 : Math.random()/3 //changing ball's y direction
