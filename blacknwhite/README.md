@@ -1,7 +1,1 @@
-## `npm i`
-
-### To install all dependencies
-
-## `npm start`
-
-### To run the project on localhost:8080
+# refactored version -> https://github.com/StaRenn/black-n-white-refactor
