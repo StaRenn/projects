@@ -1,3 +1,5 @@
+# im about to refactor this
+
 ## `npm i`
 
 ### To install all dependencies
