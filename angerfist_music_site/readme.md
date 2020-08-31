@@ -1,10 +1,1 @@
-# im about to refactor this
-
-## `npm i`
-
-### To install all dependencies
-
-## `npm start`
-
-### To run the project on localhost:8080
-
+# refactored version -> https://github.com/StaRenn/angerfist-music-site
