@@ -1,3 +1,4 @@
+# refactored version of news-searching -> https://github.com/StaRenn/news-searching
 https://github.com/maxfarseer/tz-webinars/tree/tz-2-react-redux-router-async
 ---
 ## `npm i`
